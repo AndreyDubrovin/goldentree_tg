@@ -1,6 +1,6 @@
 // конфиг api
 const apiConfig = {
-  baseUrl: "http://51.250.12.44:3000",
+  baseUrl: "https://api.goldentree.su",
   headers: {
     "Content-Type": "multipart/form-data",
   },

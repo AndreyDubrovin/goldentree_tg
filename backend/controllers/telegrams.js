@@ -30,6 +30,7 @@ module.exports.sendFoto = (req, res, next) => {
     };
     bot.sendPhoto(chatId, data, { caption: `Код сертификата: ${code}\nФИО: ${surname} ${name} ${patronymic} \nИнстаграмм:${instagram}\nТелефон для связи: ${telephone}` }, fileOptions)
       .then(() => res.send({ message: 'Заявка на регистрацию принята' }))
-      .catch(next);
+      .catch(err) => console.log(err);
+      /* .catch(next); */
   }
 };

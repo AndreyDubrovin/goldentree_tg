@@ -1,0 +1,23 @@
+.form__button {
+  border: 0;
+  text-align: center;
+  padding: 15px 55px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    background: #E59796;
+    margin-top: 20px;
+}
+
+.form__button:hover {
+  color: #E69796;
+  background: #FAEFEF;
+}
+
+.form__button:disabled {
+  color: #ffffff;
+  background: #d3d3d3;
+}

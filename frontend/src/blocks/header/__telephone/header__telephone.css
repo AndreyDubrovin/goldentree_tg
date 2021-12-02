@@ -1,0 +1,9 @@
+.header__telephone {
+  margin: 0 0 0 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #180000;
+}

@@ -1,0 +1,4 @@
+.info-form__text-block {
+  display: flex;
+  flex-direction: column;
+}

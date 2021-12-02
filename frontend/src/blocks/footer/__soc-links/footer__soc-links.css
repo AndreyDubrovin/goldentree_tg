@@ -1,0 +1,16 @@
+.footer__soc-links {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+
+}
+
+@media screen and (max-width: 1022px) {
+  .footer__soc-links {
+    justify-content: center;
+}
+}
+
+
+

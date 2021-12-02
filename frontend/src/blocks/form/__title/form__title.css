@@ -1,0 +1,20 @@
+.form__title {
+  margin: 0 auto 40px;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 100%;
+  color: #54362a;
+  font-family: "Nunito", sans-serif;
+}
+
+@media screen and (max-width: 1280px) {
+  .form__title {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .form__title {
+    font-size: 24px;
+  }
+}

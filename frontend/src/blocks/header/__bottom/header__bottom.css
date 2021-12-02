@@ -1,0 +1,6 @@
+.header__bottom {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+}

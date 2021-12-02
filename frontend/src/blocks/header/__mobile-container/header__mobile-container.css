@@ -1,0 +1,14 @@
+.header__mobile-container {
+  display: none;
+  max-width: 1024px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .header__mobile-container {
+    display: flex;
+}
+}
+

@@ -1,0 +1,10 @@
+.footer {
+  background: #D4CDCA;
+}
+
+@media screen and (max-width: 1280px) {
+  .footer {
+    padding: 0 40px;
+  }
+}
+

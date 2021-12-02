@@ -1,0 +1,15 @@
+.footer__soc-link {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  width: 39px;
+  height: 39px;
+  border-radius: 100px;
+  border: 1px solid #54362A;
+  margin-right: 10px;
+}
+
+.footer__soc-link:hover {
+  border: 1px solid #E69796;
+  transition: 0.3s;
+}

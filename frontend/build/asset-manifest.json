@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/promo/static/css/main.cf19321d.chunk.css",
+    "main.js": "/promo/static/js/main.2fd8bbec.chunk.js",
+    "main.js.map": "/promo/static/js/main.2fd8bbec.chunk.js.map",
+    "runtime-main.js": "/promo/static/js/runtime-main.4adee617.js",
+    "runtime-main.js.map": "/promo/static/js/runtime-main.4adee617.js.map",
+    "static/js/2.3bee2b5b.chunk.js": "/promo/static/js/2.3bee2b5b.chunk.js",
+    "static/js/2.3bee2b5b.chunk.js.map": "/promo/static/js/2.3bee2b5b.chunk.js.map",
+    "static/js/3.7c3ee401.chunk.js": "/promo/static/js/3.7c3ee401.chunk.js",
+    "static/js/3.7c3ee401.chunk.js.map": "/promo/static/js/3.7c3ee401.chunk.js.map",
+    "index.html": "/promo/index.html",
+    "static/css/main.cf19321d.chunk.css.map": "/promo/static/css/main.cf19321d.chunk.css.map",
+    "static/js/2.3bee2b5b.chunk.js.LICENSE.txt": "/promo/static/js/2.3bee2b5b.chunk.js.LICENSE.txt",
+    "static/media/burger.b1b171b3.svg": "/promo/static/media/burger.b1b171b3.svg",
+    "static/media/cart.4703dabf.svg": "/promo/static/media/cart.4703dabf.svg",
+    "static/media/catalog-img3.1e8ab5e4.png": "/promo/static/media/catalog-img3.1e8ab5e4.png",
+    "static/media/index.css": "/promo/static/media/upload.44bf4fcc.svg",
+    "static/media/instagram_social.3f277de4.svg": "/promo/static/media/instagram_social.3f277de4.svg",
+    "static/media/logo.b897ae3c.svg": "/promo/static/media/logo.b897ae3c.svg",
+    "static/media/vk-social-logotype.b65afadd.svg": "/promo/static/media/vk-social-logotype.b65afadd.svg",
+    "static/media/wb-icon.7975a147.png": "/promo/static/media/wb-icon.7975a147.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4adee617.js",
+    "static/js/2.3bee2b5b.chunk.js",
+    "static/css/main.cf19321d.chunk.css",
+    "static/js/main.2fd8bbec.chunk.js"
+  ]
+}

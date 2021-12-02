@@ -1,0 +1,13 @@
+.form__text {
+  padding: 5px 20px;
+  border: 1px solid #CDB1B1;
+  border-radius: 0;
+  font-size: 16px;
+  line-height: 160%;
+  color: #54362A;
+  margin-top: 20px;
+}
+
+.form__text::placeholder {
+  color: #CDB1B1;
+}

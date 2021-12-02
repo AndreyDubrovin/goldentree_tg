@@ -1,0 +1,14 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  background-color: white;
+  align-items: center;
+}
+
+@media screen and (max-width: 320px) {
+  .card {
+    width: 280px;
+    margin: auto;
+  }
+}

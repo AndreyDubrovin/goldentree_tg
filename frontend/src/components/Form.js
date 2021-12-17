@@ -1,8 +1,9 @@
 import React, { useDebugValue } from "react";
 import { useFormWithValidation } from "./Validation";
-
+import arrow from '../images/arrow2.svg';
 function Form(props) {
   const [text, setText] = React.useState("Загрузить фото с отзывом");
+  const [conditions, setconditions] = React.useState(false);
   const form = React.useRef(null);
   const validation = useFormWithValidation();
 
@@ -20,6 +21,12 @@ function Form(props) {
       setText("Выберите фото c отзывом");
     }
   }
+
+  function handleClick() {
+    setconditions(!conditions);
+  }
+
+
   return (
     <>
       {/*       <div className="info-form">
@@ -30,37 +37,37 @@ function Form(props) {
       </div> */}
       {/*       <div className="form-block"> */}
       <div className="info-form">
-        <h2 className="info-form__title">Условия конкурса</h2>
-        <div className="info-form__text-block">
+        <h2 className="info-form__title" onClick={handleClick}>Условия конкурса<img className={`info-form__arrow ${conditions === true ? 'info-form__arrow_transform' :''}`} src={arrow} alt="стрелка"></img></h2>
+        <div className={`info-form__text-block ${conditions === true ? 'info-form__text-block_active' :''}`}>
           <p className="info-form__text">
             ПРИВЕТ, БЛАГОДАРИМ ТЕБЯ ЗА ПОКУПКУ И ХОТИМ НЕМНОГО РАССКАЗАТЬ ОБ
             УСЛОВИЯХ КОНКУРСА ОТ ООО «ГОЛДЕН ТРИ». ПРОСИМ ТЕБЯ ВНИМАТЕЛЬНО
             ОЗНАКОМИТЬСЯ С УСЛОВИЯМИ КОНКУРСА И ВЫПОЛНИТЬ ВСЕ-ВСЕ ШАГИ, ЧТОБЫ
-            ПОЛУЧИТЬ ВОЗМОЖНОСТЬ ВЫИГРАТЬ IPHONE 13 PRO.
+            ПОЛУЧИТЬ ВОЗМОЖНОСТЬ ВЫИГРАТЬ <b>IPHONE 13 PRO</b>.
           </p>
           <p className="info-form__text">
-            ШАГ 1. <br/>В ТОВАРАХ ОТ ПОСТАВЩИКА ООО "ГОЛДЕН ТРИ" НАЙДИ ВЛОЖЕНИЕ С
+            <b>ШАГ 1. </b><br/>В ТОВАРАХ ОТ ПОСТАВЩИКА ООО "ГОЛДЕН ТРИ" НАЙДИ ВЛОЖЕНИЕ С
             УНИКАЛЬНЫМ КОДОМ *НА ДАННЫЙ МОМЕНТ НЕ ВСЕ ТОВАРЫ ОТ ПОСТАВЩИКА ООО
             «ГОЛДЕН ТРИ» СОДЕРЖАТ ВЛОЖЕНИЕ С УНИКАЛЬНЫМ КОДОМ.
           </p>
           <p className="info-form__text">
-            ШАГ2. <br/>ОСТАВЬ ОТЗЫВ НА ПРИОБРЕТЕННЫЙ ТОВАР НА САЙТЕ WILDBERRIES И
+          <b>ШАГ2. </b><br/>ОСТАВЬ ОТЗЫВ НА ПРИОБРЕТЕННЫЙ ТОВАР НА САЙТЕ WILDBERRIES И
             СДЕЛАЙ СКРИНШОТ ОТЗЫВА *ЕСЛИ ВЫ КУПИЛИ ТОВАР ПОВТОРНО И УЖЕ
             ОСТАВЛЯЛИ ОТЗЫВ, ТО НЕОБХОДИМО ПРЕДОСТАВИТЬ СКРИНШОТ ПРОШЛОГО
             ОТЗЫВА. ВНИМАНИЕ: НАШ МЕНЕДЖЕР МОЖЕТ ЗАПРОСИТЬ ПОДТВЕРЖДЕНИЕ ВАШЕЙ
             ЛИЧНОСТИ В ПРОФИЛЕ ВБ.
           </p>
           <p className="info-form__text">
-            ШАГ 3. <br/>ПОДПИШИСЬ НА НАШ АККАУНТ В ИНСТАГРАМ: @GOLDENTREE_RU
+          <b>ШАГ 3. </b><br/>ПОДПИШИСЬ НА НАШ АККАУНТ В ИНСТАГРАМ: <a className="info-form__link" href="https://www.instagram.com/goldentree_ru/" target='_blank' rel="noreferrer">@GOLDENTREE_RU</a>
           </p>
           <p className="info-form__text">
-            ШАГ 4. <br/>ОТСКАНИРУЙ QR-КОД ВНУТРИ БРОШЮРЫ И ЗАПОЛНИ ВСЕ НЕОБХОДИМЫЕ
+          <b>ШАГ 4. </b><br/>ОТСКАНИРУЙ QR-КОД ВНУТРИ БРОШЮРЫ И ЗАПОЛНИ ВСЕ НЕОБХОДИМЫЕ
             ДАННЫЕ ДЛЯ УЧАСТИЯ В КОНКУРСЕ: ФАМИЛИЯ, ИМЯ, ОТЧЕСТВО, АККАУНТ В
             ИНСТАГРАМЕ, ТЕЛЕФОН, УНИКАЛЬНЫЙ КОД, СКРИНШОТ ОТЗЫВА НА ТОВАР.
           </p>
           <p className="info-form__text">
-            ШАГ 5. <br/>РОЗЫГРЫШ ПРОЙДЕТ 08.03.2022 В ПРЯМОМ ЭФИРЕ В
-            ИНСТАГРАМ-АККАУНТЕ @GOLDENTREE_RU. <br/>• КАЖДЫЙ ПОКУПАТЕЛЬ МОЖЕТ
+          <b>ШАГ 5. </b><br/>РОЗЫГРЫШ ПРОЙДЕТ <b>08.03.2022</b> В ПРЯМОМ ЭФИРЕ В
+            ИНСТАГРАМ-АККАУНТЕ <a className="info-form__link" href="https://www.instagram.com/goldentree_ru/" target='_blank' rel="noreferrer">@GOLDENTREE_RU</a>. <br/>• КАЖДЫЙ ПОКУПАТЕЛЬ МОЖЕТ
             ЗАРЕГИСТРИРОВАТЬ НЕОГРАНИЧЕННОЕ КОЛИЧЕСТВО УНИКАЛЬНЫХ КОДОВ, ПОЭТОМУ
             ЧЕМ БОЛЬШЕ ПОКУПОК ВЫ СОВЕРШАЕТЕ, ТЕМ БОЛЬШЕ ВЕРОЯТНОСТЬ ВЫИГРАТЬ
             IPHONE 13 PRO. <br/>• КАЖДЫЙ ЗАРЕГИСТРИРОВАННЫЙ УНИКАЛЬНЫЙ КОД НЕ ТЕРЯЕТ

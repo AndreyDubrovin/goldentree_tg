@@ -7,6 +7,10 @@ import CardsList from './CardsList';
 import Footer from './Footer';
 import Preloader from "./Preloader";
 import BurgerMenu from './BurgerMenu';
+import elzAqua from '../images/23664397.jpg';
+import elz0666 from '../images/26988420.jpg';
+import elzTonic from '../images/26984839.jpg';
+
 function App() {
   const [loading, setloading] = React.useState(false);
   const [burger, setBurger] = React.useState(false);
@@ -14,33 +18,21 @@ function App() {
   const cards = [
     {
       _id: 1,
-      image: 'https://images.wbstatic.net/big/new/12260000/12263441-1.jpg',
-      wbLink: 'https://www.wildberries.ru/catalog/26988420/detail.aspx?targetUrl=SP',
-      cardTitle: 'Test',
+      image: elzAqua,
+      wbLink: 'https://www.wildberries.ru/catalog/23664397/detail.aspx',
+      cardTitle: 'ELIZAVECCA Крем для лица AQUA HYALURONIC, 50мл',
     },
     {
       _id: 2,
-      image: 'https://images.wbstatic.net/big/new/12260000/12263441-1.jpg',
-      wbLink: 'https://www.wildberries.ru/catalog/3811446/detail.aspx?targetUrl=BP',
-      cardTitle: 'Test',
+      image: elz0666,
+      wbLink: 'https://www.wildberries.ru/catalog/26988420/detail.aspx',
+      cardTitle: 'ELIZAVECCA Сыворотка с гиалуроновой кислотой 97%, 50мл',
     },
     {
       _id: 3,
-      image: 'https://images.wbstatic.net/big/new/12260000/12263441-1.jpg',
-      wbLink: 'https://www.wildberries.ru/catalog/3811446/detail.aspx?targetUrl=BP',
-      cardTitle: 'Test',
-    },
-    {
-      _id: 4,
-      image: 'https://images.wbstatic.net/big/new/12260000/12263441-1.jpg',
-      wbLink: 'https://www.wildberries.ru/catalog/3811446/detail.aspx?targetUrl=BP',
-      cardTitle: 'Test',
-    },
-    {
-      _id: 5,
-      image: 'https://images.wbstatic.net/big/new/12260000/12263441-1.jpg',
-      wbLink: 'https://www.wildberries.ru/catalog/3811446/detail.aspx?targetUrl=BP',
-      cardTitle: 'Test',
+      image: elzTonic,
+      wbLink: 'https://www.wildberries.ru/catalog/26984839/detail.aspx',
+      cardTitle: 'ELIZAVECCA Тоник-пилинг на основе фруктовых кислот, 200мл',
     },
   ];
   React.useEffect(() => {

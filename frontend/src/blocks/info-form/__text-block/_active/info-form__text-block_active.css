@@ -1,0 +1,15 @@
+@keyframes moveBlock {
+  0% {
+    height: 0px;
+  }
+
+  100% {
+    height: 725px;
+  }
+}
+
+.info-form__text-block_active {
+  display: flex;
+  overflow: auto;
+  animation: moveBlock 1s ease-out 0s 1 forwards running;
+}

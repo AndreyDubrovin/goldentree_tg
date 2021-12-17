@@ -1,4 +1,4 @@
 .info-form__text-block {
-  display: flex;
+  display: none;
   flex-direction: column;
 }

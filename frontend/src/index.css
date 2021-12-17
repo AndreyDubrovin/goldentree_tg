@@ -59,5 +59,9 @@
 @import url(./blocks/curtain/__links/curtain__links.css);
 @import url(./blocks/info-form/info-form.css);
 @import url(./blocks/info-form/__text/info-form__text.css);
+@import url(./blocks/info-form/__link/info-form__link.css);
 @import url(./blocks/info-form/__title/info-form__title.css);
 @import url(./blocks/info-form/__text-block/info-form__text-block.css);
+@import url(./blocks/info-form/__arrow/info-form__arrow.css);
+@import url(./blocks/info-form/__arrow/_transform/info-form__arrow_transform.css);
+@import url(./blocks/info-form/__text-block/_active/info-form__text-block_active.css);

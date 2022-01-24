@@ -5,6 +5,7 @@ import Header from './Header';
 import Form from './Form';
 import CardsList from './CardsList';
 import Footer from './Footer';
+import Success from './Success';
 import Preloader from "./Preloader";
 import BurgerMenu from './BurgerMenu';
 import elzAqua from '../images/23664397.jpg';
@@ -14,6 +15,7 @@ import elzTonic from '../images/26984839.jpg';
 function App() {
   const [loading, setloading] = React.useState(false);
   const [burger, setBurger] = React.useState(false);
+  const [success, setSuccess] = React.useState(false);
   const history = useHistory();
   const cards = [
     {
@@ -46,6 +48,7 @@ function App() {
       .then((data) => {
         setloading(false);
         history.push("/cards");
+        setSuccess(true);
       })
       .catch((err) => {
         setloading(false);
@@ -70,6 +73,7 @@ function App() {
         <Form form={sendForm}/>
         </Route>
         <Route path="/cards">
+          <Success success={success}/>
         <CardsList cards={cards}/>
         </Route>
       </Switch>

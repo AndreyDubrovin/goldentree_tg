@@ -65,3 +65,8 @@
 @import url(./blocks/info-form/__arrow/info-form__arrow.css);
 @import url(./blocks/info-form/__arrow/_transform/info-form__arrow_transform.css);
 @import url(./blocks/info-form/__text-block/_active/info-form__text-block_active.css);
+@import url(./blocks/success/success.css);
+@import url(./blocks/success/__title/success__title.css);
+@import url(./blocks/success/__subtitle/success__subtitle.css);
+@import url(./blocks/success/__text/success__text.css);
+@import url(./blocks/success/__button/success__button.css);

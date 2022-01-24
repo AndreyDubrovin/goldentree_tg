@@ -1,0 +1,14 @@
+.success__button {
+  min-width: 280px;
+  border: 0;
+  text-align: center;
+  padding: 15px 55px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background: #E59796;
+  cursor: pointer;
+}

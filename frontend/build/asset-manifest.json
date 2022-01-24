@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/promo/static/css/main.38e4cf47.chunk.css",
-    "main.js": "/promo/static/js/main.dc2a1901.chunk.js",
-    "main.js.map": "/promo/static/js/main.dc2a1901.chunk.js.map",
+    "main.css": "/promo/static/css/main.2909476a.chunk.css",
+    "main.js": "/promo/static/js/main.03285fda.chunk.js",
+    "main.js.map": "/promo/static/js/main.03285fda.chunk.js.map",
     "runtime-main.js": "/promo/static/js/runtime-main.4adee617.js",
     "runtime-main.js.map": "/promo/static/js/runtime-main.4adee617.js.map",
-    "static/js/2.3bee2b5b.chunk.js": "/promo/static/js/2.3bee2b5b.chunk.js",
-    "static/js/2.3bee2b5b.chunk.js.map": "/promo/static/js/2.3bee2b5b.chunk.js.map",
+    "static/js/2.8c7c27af.chunk.js": "/promo/static/js/2.8c7c27af.chunk.js",
+    "static/js/2.8c7c27af.chunk.js.map": "/promo/static/js/2.8c7c27af.chunk.js.map",
     "static/js/3.7c3ee401.chunk.js": "/promo/static/js/3.7c3ee401.chunk.js",
     "static/js/3.7c3ee401.chunk.js.map": "/promo/static/js/3.7c3ee401.chunk.js.map",
     "index.html": "/promo/index.html",
-    "static/css/main.38e4cf47.chunk.css.map": "/promo/static/css/main.38e4cf47.chunk.css.map",
-    "static/js/2.3bee2b5b.chunk.js.LICENSE.txt": "/promo/static/js/2.3bee2b5b.chunk.js.LICENSE.txt",
+    "static/css/main.2909476a.chunk.css.map": "/promo/static/css/main.2909476a.chunk.css.map",
+    "static/js/2.8c7c27af.chunk.js.LICENSE.txt": "/promo/static/js/2.8c7c27af.chunk.js.LICENSE.txt",
+    "static/media/23664397.beb6560b.jpg": "/promo/static/media/23664397.beb6560b.jpg",
+    "static/media/26984839.bc7d8b61.jpg": "/promo/static/media/26984839.bc7d8b61.jpg",
+    "static/media/26988420.e2f8d875.jpg": "/promo/static/media/26988420.e2f8d875.jpg",
     "static/media/arrow2.780d3280.svg": "/promo/static/media/arrow2.780d3280.svg",
     "static/media/burger.b1b171b3.svg": "/promo/static/media/burger.b1b171b3.svg",
     "static/media/cart.4703dabf.svg": "/promo/static/media/cart.4703dabf.svg",
-    "static/media/catalog-img3.1e8ab5e4.png": "/promo/static/media/catalog-img3.1e8ab5e4.png",
     "static/media/index.css": "/promo/static/media/upload.44bf4fcc.svg",
     "static/media/instagram_social.3f277de4.svg": "/promo/static/media/instagram_social.3f277de4.svg",
     "static/media/logo.b897ae3c.svg": "/promo/static/media/logo.b897ae3c.svg",
@@ -24,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.4adee617.js",
-    "static/js/2.3bee2b5b.chunk.js",
-    "static/css/main.38e4cf47.chunk.css",
-    "static/js/main.dc2a1901.chunk.js"
+    "static/js/2.8c7c27af.chunk.js",
+    "static/css/main.2909476a.chunk.css",
+    "static/js/main.03285fda.chunk.js"
   ]
 }

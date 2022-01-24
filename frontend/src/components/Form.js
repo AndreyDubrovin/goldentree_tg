@@ -81,17 +81,19 @@ function Form(props) {
       </div>
       <form className="form" ref={form} onSubmit={handleSubmit} noValidate>
         <h1 className="form__title">Регистрация в розыгрыше</h1>
+        <p className="form__info">Буквы Кирилицей</p>
         <input
           className="form__text"
           type="text"
           name="surname"
           placeholder="Фамилия*"
           pattern="[А-Яа-яЁё-]{1,}"
-          alue={validation.values.surname}
+          value={validation.values.surname}
           onChange={validation.handleChange}
           required
         />
         <span className="form-error">{validation.errors.surname}</span>
+        <p className="form__info">Буквы Кирилицей</p>
         <input
           className="form__text"
           type="text"
@@ -103,6 +105,7 @@ function Form(props) {
           required
         />
         <span className="form-error">{validation.errors.name}</span>
+        <p className="form__info">Буквы Кирилицей</p>
         <input
           className="form__text"
           type="text"
@@ -114,6 +117,7 @@ function Form(props) {
           required
         />
         <span className="form-error">{validation.errors.patronymic}</span>
+        <p className="form__info">@xxx</p>
         <input
           className="form__text"
           type="text"
@@ -127,6 +131,7 @@ function Form(props) {
           required
         />
         <span className="form-error">{validation.errors.instagram}</span>
+        <p className="form__info">Цифры</p>
         <input
           className="form__text"
           type="tel"
@@ -138,6 +143,7 @@ function Form(props) {
           required
         />
         <span className="form-error">{validation.errors.telephone}</span>
+        <p className="form__info">Цифры</p>
         <input
           className="form__text"
           type="number"

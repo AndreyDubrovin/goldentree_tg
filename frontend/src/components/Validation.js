@@ -34,8 +34,8 @@ export function useFormWithValidation() {
     let value = target.value;
     if (name === 'instagram' && value.startsWith('@@')) value = value.replace('@','');
     setValues({...values, [name]: value});
-    setErrors({...errors, [name]: target.validationMessage });
     setIsValid(target.closest("form").checkValidity());
+    setErrors({...errors, [name]: target.validationMessage });
   };
 
   const handleChangeFile = (event) => {

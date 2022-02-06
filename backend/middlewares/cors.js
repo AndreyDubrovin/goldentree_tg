@@ -6,6 +6,7 @@ const allowedCors = [
 ];
 
 module.exports = (req, res, next) => {
+  console.log('пришёл cors');
   const { origin } = req.headers; // Сохраняем источник запроса в переменную origin
   // проверяем, что источник запроса есть среди разрешённых
   if (allowedCors.includes(origin)) {

@@ -81,7 +81,7 @@ function Form(props) {
       </div>
       <form className="form" ref={form} onSubmit={handleSubmit} noValidate>
         <h1 className="form__title">Регистрация в розыгрыше</h1>
-        <p className="form__info">Буквы Кирилицей</p>
+        <p className="form__info">А-я</p>
         <input
           className="form__text"
           type="text"
@@ -93,7 +93,7 @@ function Form(props) {
           required
         />
         <span className="form-error">{validation.errors.surname}</span>
-        <p className="form__info">Буквы Кирилицей</p>
+        <p className="form__info">А-я</p>
         <input
           className="form__text"
           type="text"
@@ -105,7 +105,7 @@ function Form(props) {
           required
         />
         <span className="form-error">{validation.errors.name}</span>
-        <p className="form__info">Буквы Кирилицей</p>
+        <p className="form__info">А-я</p>
         <input
           className="form__text"
           type="text"
@@ -131,7 +131,7 @@ function Form(props) {
           required
         />
         <span className="form-error">{validation.errors.instagram}</span>
-        <p className="form__info">Цифры</p>
+        <p className="form__info">0-9</p>
         <input
           className="form__text"
           type="tel"
@@ -143,7 +143,7 @@ function Form(props) {
           required
         />
         <span className="form-error">{validation.errors.telephone}</span>
-        <p className="form__info">Цифры</p>
+        <p className="form__info">0-9</p>
         <input
           className="form__text"
           type="number"
@@ -173,7 +173,7 @@ function Form(props) {
           Зарегистрироваться
         </button>
       </form>
-      {/*       </div> */}
+      <p className={`form-err ${props.err ? "form-err_active" : ""}`}>Произошла ошибка, попробуйте зарегистрироваться позже</p>
     </>
   );
 }

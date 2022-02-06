@@ -16,6 +16,7 @@ function App() {
   const [loading, setloading] = React.useState(false);
   const [burger, setBurger] = React.useState(false);
   const [success, setSuccess] = React.useState(false);
+  const [err, setErr] = React.useState(false);
   const history = useHistory();
   const cards = [
     {
@@ -43,16 +44,19 @@ function App() {
 
 
   function sendForm(form) {
+    setErr(false);
     setloading(true);
     api.sendFotoTg(form)
-      .then((data) => {
+      .then(() => {
         setloading(false);
         history.push("/cards");
         setSuccess(true);
+        setErr(false);
       })
       .catch((err) => {
         setloading(false);
         console.log(err);
+        setErr(true);
       });
   }
 
@@ -70,7 +74,7 @@ function App() {
       <main className="main">
       <Switch>
         <Route path="/promo">
-        <Form form={sendForm}/>
+        <Form err={err} form={sendForm}/>
         </Route>
         <Route path="/cards">
           <Success success={success}/>

@@ -1,6 +1,8 @@
 const allowedCors = [
   'http://www.goldentree.su',
   'https://www.goldentree.su',
+  'https://goldentree.su',
+  'http://goldentree.su',
 ];
 
 module.exports = (req, res, next) => {

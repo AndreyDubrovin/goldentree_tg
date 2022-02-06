@@ -16,6 +16,7 @@ module.exports.sendMessage = (req, res, next) => {
 };
 
 module.exports.sendFoto = (req, res, next) => {
+  console.log('пришёл запрос на добавление картинки');
   const filedata = req.file;
   if (!filedata) {
     const badrequest = new BadRequest('Не верный формат картинки');

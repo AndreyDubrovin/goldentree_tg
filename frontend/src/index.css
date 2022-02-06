@@ -70,3 +70,6 @@
 @import url(./blocks/success/__subtitle/success__subtitle.css);
 @import url(./blocks/success/__text/success__text.css);
 @import url(./blocks/success/__button/success__button.css);
+@import url(./blocks/success/_active/success_active.css);
+@import url(./blocks/form-err/form-err.css);
+@import url(./blocks/form-err/_active/form-err_active.css);

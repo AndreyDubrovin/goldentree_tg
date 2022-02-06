@@ -14,7 +14,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(requestLogger);
-
 app.use(cors);
 
 app.use('/telegram', require('./routes/telegram'));

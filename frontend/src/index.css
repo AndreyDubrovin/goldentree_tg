@@ -43,6 +43,7 @@
 @import url(./blocks/form/__input-file-visible/form__input-file-visible.css);
 @import url(./blocks/form/__text-file/form__text-file.css);
 @import url(./blocks/form/__label/form__label.css);
+@import url(./blocks/form/__info/form__info.css);
 @import url(./blocks/form-error/form-error.css);
 @import url(./blocks/cards/cards.css);
 @import url(./blocks/card/card.css);

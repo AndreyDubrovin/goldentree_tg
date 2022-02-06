@@ -2,7 +2,7 @@ import React, { useDebugValue } from "react";
 import { useFormWithValidation } from "./Validation";
 import arrow from '../images/arrow2.svg';
 function Form(props) {
-  const [text, setText] = React.useState("Загрузить фото с отзывом");
+  const [text, setText] = React.useState("Загрузить фото/скриншот с отзывом на купленный товар");
   const [conditions, setconditions] = React.useState(false);
   const form = React.useRef(null);
   const validation = useFormWithValidation();
@@ -81,7 +81,7 @@ function Form(props) {
       </div>
       <form className="form" ref={form} onSubmit={handleSubmit} noValidate>
         <h1 className="form__title">Регистрация в розыгрыше</h1>
-        <p className="form__info">А-я</p>
+        <p className="form__info">Внеси свою Фамилию (А-я)</p>
         <input
           className="form__text"
           type="text"
@@ -93,7 +93,7 @@ function Form(props) {
           required
         />
         <span className="form-error">{validation.errors.surname}</span>
-        <p className="form__info">А-я</p>
+        <p className="form__info">Внеси своё Имя (А-я)</p>
         <input
           className="form__text"
           type="text"
@@ -105,7 +105,7 @@ function Form(props) {
           required
         />
         <span className="form-error">{validation.errors.name}</span>
-        <p className="form__info">А-я</p>
+        <p className="form__info">Внеси своё Отчество (А-я)</p>
         <input
           className="form__text"
           type="text"
@@ -117,7 +117,7 @@ function Form(props) {
           required
         />
         <span className="form-error">{validation.errors.patronymic}</span>
-        <p className="form__info">@xxx</p>
+        <p className="form__info">Подпишись на наш <a className="info-form__link" href="https://www.instagram.com/goldentree_ru/" target='_blank' rel="noreferrer">инстаграм</a> и внеси свой аккаунт (@xxx)</p>
         <input
           className="form__text"
           type="text"
@@ -131,7 +131,7 @@ function Form(props) {
           required
         />
         <span className="form-error">{validation.errors.instagram}</span>
-        <p className="form__info">0-9</p>
+        <p className="form__info">Внеси номер телефона (0-9) пример: 89xxxxxxxxx</p>
         <input
           className="form__text"
           type="tel"
@@ -143,7 +143,7 @@ function Form(props) {
           required
         />
         <span className="form-error">{validation.errors.telephone}</span>
-        <p className="form__info">0-9</p>
+        <p className="form__info">Внеси уникальный код с брошюры (0-9)</p>
         <input
           className="form__text"
           type="number"

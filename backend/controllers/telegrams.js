@@ -5,7 +5,6 @@ const BadRequest = require('../errors/bad-request'); // 400
 /* const ConflictingRequest = require('../errors/сonflicting-request'); // 409 */
 
 const { TOKEN_TELEGRAM } = process.env;
-console.log(TOKEN_TELEGRAM);
 const chatId = -515771129;
 const bot = new TelegramBot(TOKEN_TELEGRAM, { polling: false });
 

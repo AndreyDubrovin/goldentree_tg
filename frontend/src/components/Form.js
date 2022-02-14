@@ -87,7 +87,6 @@ function Form(props) {
           type="text"
           name="surname"
           placeholder="Фамилия*"
-          pattern="[А-Яа-яЁё-]{1,}"
           value={validation.values.surname}
           onChange={validation.handleChange}
           required
@@ -99,7 +98,6 @@ function Form(props) {
           type="text"
           name="name"
           placeholder="Имя*"
-          pattern="[А-Яа-яЁё-]{1,}"
           value={validation.values.name}
           onChange={validation.handleChange}
           required
@@ -111,7 +109,6 @@ function Form(props) {
           type="text"
           name="patronymic"
           placeholder="Отчество*"
-          pattern="[А-Яа-яЁё-]{1,}"
           value={validation.values.patronymic}
           onChange={validation.handleChange}
           required

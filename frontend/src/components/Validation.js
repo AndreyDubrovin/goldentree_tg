@@ -20,7 +20,7 @@ export function useFormWithValidation() {
     surname: '',
     name: '',
     patronymic: '',
-    instagram: '',
+    telegram: '',
     telephone: '',
     code: '',
     feedbackWb: '',
@@ -32,7 +32,7 @@ export function useFormWithValidation() {
     const target = event.target;
     const name = target.name;
     let value = target.value;
-    if (name === 'instagram' && value.startsWith('@@')) value = value.replace('@','');
+    if (name === 'telegram' && value.startsWith('@@')) value = value.replace('@','');
     setValues({...values, [name]: value});
     setIsValid(target.closest("form").checkValidity());
     setErrors({...errors, [name]: target.validationMessage });
@@ -58,7 +58,7 @@ export function useFormWithValidation() {
     const target = event.target;
     const name = target.name;
     const value = "@";
-    if (values.instagram === '' || !values.instagram.startsWith('@')) setValues({...values, [name]: value});
+    if (values.telegram === '' || !values.telegram.startsWith('@')) setValues({...values, [name]: value});
   };
 
   const resetForm = useCallback(

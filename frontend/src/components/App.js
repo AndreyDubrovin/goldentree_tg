@@ -62,7 +62,6 @@ function App() {
 
   function handleBurger() {
     setBurger(!burger);
-    console.log("bur");
   }
 
     return (

@@ -23,13 +23,13 @@ module.exports.sendFoto = (req, res, next) => {
     next(badrequest);
   } else {
     const {
-      name, surname, patronymic, instagram, code, telephone,
+      name, surname, patronymic, telegram, code, telephone,
     } = req.body;
     const data = req.file.path;
     const fileOptions = {
       contentType: 'multipart/form-data',
     };
-    bot.sendPhoto(chatId, data, { caption: `Код сертификата: ${code}\nФИО: ${surname} ${name} ${patronymic} \nИнстаграмм:${instagram}\nТелефон для связи: ${telephone}` }, fileOptions)
+    bot.sendPhoto(chatId, data, { caption: `Код сертификата: ${code}\nФИО: ${surname} ${name} ${patronymic} \nИнстаграмм:${telegram}\nТелефон для связи: ${telephone}` }, fileOptions)
       .then(() => res.send({ message: 'Заявка на регистрацию принята' }))
       .catch((err) => {
         console.log(err)});

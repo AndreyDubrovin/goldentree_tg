@@ -13,8 +13,8 @@ function Footer() {
           <p className="footer__text">Мы в соцсетях</p>
           <ul className="footer__soc-links">
             <ul className="footer__ul"><a className="footer__soc-link" href="https://vk.com/goldentreeru" target="_blank" rel="noreferrer"><img className="footer__soc-img" src={vk} alt="vk"/></a></ul>
-            <ul className="footer__ul"><a className="footer__soc-link" href="https://www.instagram.com/goldentree_ru/" target="_blank" rel="noreferrer"><img className="footer__soc-img" src={instagram} alt="instagram"/></a></ul>
-          </ul>
+{/*             <ul className="footer__ul"><a className="footer__soc-link" href="https://www.instagram.com/goldentree_ru/" target="_blank" rel="noreferrer"><img className="footer__soc-img" src={instagram} alt="instagram"/></a></ul>
+ */}          </ul>
         </div>
         <ul className="footer__menu-links">
           <h3 className="footer__title">Компания</h3>

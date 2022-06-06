@@ -39,14 +39,14 @@ function Form(props) {
       <div className="info-form">
         <h2 className="info-form__title" onClick={handleClick}>Условия конкурса<img className={`info-form__arrow ${conditions === true ? 'info-form__arrow_transform' :''}`} src={arrow} alt="стрелка"></img></h2>
         <div className={`info-form__text-block ${conditions === true ? 'info-form__text-block_active' :''}`}>
-          <p className="info-form__text">
+{/*           <p className="info-form__text">
              <b>В связи с нестабильной экономической ситуацией проведение розыгрыша переносится на неопределённый срок (ориентировочно на 01.06.2022). Мы продолжаем регистрировать и принимать ваши  заявки на участие в конкурсе. Благодарим за доверие, понимание и активность в наших соц сетях.</b>.
-          </p>
+          </p> */}
           <p className="info-form__text">
             ПРИВЕТ, БЛАГОДАРИМ ТЕБЯ ЗА ПОКУПКУ И ХОТИМ НЕМНОГО РАССКАЗАТЬ ОБ
             УСЛОВИЯХ КОНКУРСА ОТ ООО «ГОЛДЕН ТРИ». ПРОСИМ ТЕБЯ ВНИМАТЕЛЬНО
             ОЗНАКОМИТЬСЯ С УСЛОВИЯМИ КОНКУРСА И ВЫПОЛНИТЬ ВСЕ-ВСЕ ШАГИ, ЧТОБЫ
-            ПОЛУЧИТЬ ВОЗМОЖНОСТЬ ВЫИГРАТЬ <b>IPHONE 13</b>.
+            ПОЛУЧИТЬ ВОЗМОЖНОСТЬ ВЫИГРАТЬ <b>ПОДАРОК</b>.
           </p>
           <p className="info-form__text">
             <b>ШАГ 1. </b><br/>В ТОВАРАХ ОТ ПОСТАВЩИКА ООО "ГОЛДЕН ТРИ" НАЙДИ ВЛОЖЕНИЕ С
@@ -61,7 +61,7 @@ function Form(props) {
             ЛИЧНОСТИ В ПРОФИЛЕ ВБ.
           </p>
           <p className="info-form__text">
-          <b>ШАГ 3. </b><br/>ПОДПИШИСЬ НА НАШ АККАУНТ В ИНСТАГРАМ: <a className="info-form__link" href="https://www.instagram.com/goldentree_ru/" target='_blank' rel="noreferrer">@GOLDENTREE_RU</a>
+          <b>ШАГ 3. </b><br/>ПОДПИШИСЬ НА НАШ АККАУНТ В<a className="info-form__link" href="https://t.me/goldentree_russia" target='_blank' rel="noreferrer">Telegram</a>
           </p>
           <p className="info-form__text">
           <b>ШАГ 4. </b><br/>ОТСКАНИРУЙ QR-КОД ВНУТРИ БРОШЮРЫ И ЗАПОЛНИ ВСЕ НЕОБХОДИМЫЕ
@@ -69,16 +69,16 @@ function Form(props) {
             ИНСТАГРАМЕ, ТЕЛЕФОН, УНИКАЛЬНЫЙ КОД, СКРИНШОТ ОТЗЫВА НА ТОВАР.
           </p>
           <p className="info-form__text">
-          <b>ШАГ 5. </b><br/>РОЗЫГРЫШ ПРОЙДЕТ ОРИЕНТИРОВОЧНО <b>01.06.2022</b> В ПРЯМОМ ЭФИРЕ В
-            ИНСТАГРАМ-АККАУНТЕ <a className="info-form__link" href="https://www.instagram.com/goldentree_ru/" target='_blank' rel="noreferrer">@GOLDENTREE_RU</a>. <br/>• КАЖДЫЙ ПОКУПАТЕЛЬ МОЖЕТ
+          <b>ШАГ 5. </b><br/>РОЗЫГРЫШ ПРОЙДЕТ В ПРЯМОМ ЭФИРЕ В
+            ТЕЛЕГРАМ-АККАУНТЕ <a className="info-form__link" href="https://t.me/goldentree_russia" target='_blank' rel="noreferrer">Telegram</a>. <br/>• КАЖДЫЙ ПОКУПАТЕЛЬ МОЖЕТ
             ЗАРЕГИСТРИРОВАТЬ НЕОГРАНИЧЕННОЕ КОЛИЧЕСТВО УНИКАЛЬНЫХ КОДОВ, ПОЭТОМУ
             ЧЕМ БОЛЬШЕ ПОКУПОК ВЫ СОВЕРШАЕТЕ, ТЕМ БОЛЬШЕ ВЕРОЯТНОСТЬ ВЫИГРАТЬ
-            IPHONE 13. <br/>• КАЖДЫЙ ЗАРЕГИСТРИРОВАННЫЙ УНИКАЛЬНЫЙ КОД НЕ ТЕРЯЕТ
+            ПОДАРОК. <br/>• КАЖДЫЙ ЗАРЕГИСТРИРОВАННЫЙ УНИКАЛЬНЫЙ КОД НЕ ТЕРЯЕТ
             СВОЮ АКТУАЛЬНОСТЬ В ДАЛЬНЕЙШИХ РОЗЫГРЫШАХ ОТ ПОСТАВЩИКА ООО «ГОЛДЕН
             ТРИ». ИЗ УЧАСТИЯ В ДРУГИХ РОЗЫГРЫШАХ ОТ ПОСТАВЩИКА ООО «ГОЛДЕН ТРИ»
             ВЫБЫВАЕТ ТОЛЬКО УНИКАЛЬНЫЙ КОД ВЫИГРАВШЕГО УЧАСТНИКА. <br/>• ООО «ГОЛДЕН
             ТРИ» ИМЕЕТ ПРАВО ЗАПРАШИВАТЬ ДОПОЛНИТЕЛЬНЫЕ ДАННЫЕ ДЛЯ ПОДТВЕРЖДЕНИЯ
-            ЛИЧНОСТИ ВЫИГРАВШИХ УЧАСТНИКОВ.
+            ЛИЧНОСТИ ВЫИГРАВШИХ УЧАСТНИКОВ. СРОК ПРОВЕДЕНИЯ КОНКУРСА УТОЧНЯЕТСЯ.
           </p>
         </div>
       </div>
@@ -117,20 +117,20 @@ function Form(props) {
           required
         />
         <span className="form-error">{validation.errors.patronymic}</span>
-        <p className="form__info">Подпишись на наш <a className="info-form__link" href="https://www.instagram.com/goldentree_ru/" target='_blank' rel="noreferrer">инстаграм</a> и внеси свой аккаунт (@xxx)</p>
+        <p className="form__info">Подпишись на наш <a className="info-form__link" href="https://t.me/goldentree_russia" target='_blank' rel="noreferrer">Telegram</a> и внеси свой аккаунт (@xxx)</p>
         <input
           className="form__text"
           type="text"
-          name="instagram"
-          placeholder="Instagram*"
+          name="telegram"
+          placeholder="Telegram*"
           pattern="@[a-zA-Z0-9._]{1,}"
-          value={validation.values.instagram}
+          value={validation.values.telegram}
           onClick={validation.handleInstagram}
           onFocus={validation.handleClickInsta}
           onChange={validation.handleChange}
           required
         />
-        <span className="form-error">{validation.errors.instagram}</span>
+        <span className="form-error">{validation.errors.telegram}</span>
         <p className="form__info">Внеси номер телефона (0-9) пример: 89xxxxxxxxx</p>
         <input
           className="form__text"
